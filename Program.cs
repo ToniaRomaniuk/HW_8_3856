@@ -208,7 +208,7 @@ void Create3DArray(int[,,] array3D)
   int  number;
   for (int i = 0; i < temp.GetLength(0); i++)
   {
-    temp[i] = new Random().Next(10, 100);
+    temp[i] = new Random().Next(10, 99);
     number = temp[i];
     if (i >= 1)
     {
@@ -216,7 +216,7 @@ void Create3DArray(int[,,] array3D)
       {
         while (temp[i] == temp[j])
         {
-          temp[i] = new Random().Next(10, 100);
+          temp[i] = new Random().Next(10, 99);
           j = 0;
           number = temp[i];
         }
